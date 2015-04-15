@@ -22,7 +22,8 @@ func Access3rdPartyService() (http.Response, error) {
 	return http.Get(serviceYouDontControl)
 }
 
-// normally http://example.com/api, but we're changing it to use mock server <- this should be the only change necessary to run tests
+// normally http://example.com/api, but we're changing it to use mock server 
+// this should be the only change necessary to run tests
 var serviceYouDontControl = "http://127.0.0.1:10000/api"
 
 func TestSomething(t *testing.T) {
