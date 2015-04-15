@@ -3,7 +3,7 @@ Mocking 3rd party services in Go made simple
 
 
 ### How does it work
-Httpmock runs a local server (within test) that serves predefined responses to http requests effectively faking 3rd party service. In a fast, reliable way that doesn't require you to change your code, only settings (unless of course you've hardcoded service urls - that you'll have to change).
+Httpmock runs a local server (within test) that serves predefined responses to http requests effectively faking 3rd party service in a fast, reliable way that doesn't require you to change your code, only settings (unless of course you've hardcoded service urls - that you'll have to change).
 
 ### Example
 ```go
