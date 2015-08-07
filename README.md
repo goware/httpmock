@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/goware/httpmock.svg?branch=master)](https://travis-ci.org/goware/httpmock)
+
 # httpmock
 Mocking 3rd party services in Go made simple
 
