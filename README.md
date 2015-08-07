@@ -29,7 +29,7 @@ var serviceYouDontControl = "http://127.0.0.1:10000/api/list"
 func TestSomething(t *testing.T) {
 
 	// new mocking server
-	mockService := httpmock.NewMockHTTPServer("http://127.0.0.1:10000")
+	mockService := httpmock.NewMockHTTPServer("127.0.0.1:10000")
 
 	// define request->response pairs
 	requestUrl, _ := url.Parse("http://127.0.0.1:10000/api/list")
