@@ -3,7 +3,6 @@ package httpmock
 import (
 	"fmt"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"sort"
 	"strings"
@@ -51,20 +50,6 @@ func request2string(req http.Request) (string, error) {
 	}
 	sort.Strings(headerStrings)
 	fragments = append(fragments, headerStrings...)
-	log.Println(fragments)
 
 	return strings.Join(fragments, "|"), nil
-}
-
-func addRequestDefaults(req *http.Request) {
-	if req.Header == nil {
-		req.Header = http.Header{}
-	}
-	if req.Header.Get("User-Agent") == "" {
-		req.Header.Set("User-Agent", "Go-http-client/1.1")
-	}
-
-	if req.Header.Get("Accept-Encoding") == "" {
-		req.Header.Set("Accept-Encoding", "gzip")
-	}
 }
