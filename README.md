@@ -39,7 +39,7 @@ func TestSomething(t *testing.T) {
 				Method: "GET",
 				URL:    requestUrl,
 			},
-			Response: Response{
+			Response: httpmock.Response{
 				StatusCode: 200,
 				Body:       "it's alive!",
 			},
